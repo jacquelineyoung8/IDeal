@@ -12,7 +12,7 @@ def getConn():
 
 @app.route('/welcome/', methods = ['GET'])
 def welcomePage():
-  return curent_app.send_static_file("index.html")
+  return render_template("index.html")
 
 @app.route('/addReview/', methods= ['GET','POST'])
 @app.route('/FAQ/', methods = ['GET'])
