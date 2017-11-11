@@ -1,4 +1,4 @@
-from flask import flask
+from flask import Flask
 import os, sys
 import MySQLdb
 import dbconn2
@@ -14,12 +14,12 @@ def getConn():
 def welcomePage():
   return curent_app.send_static_file("index.html")
 
-@app.route('/addReview/', methods= ['GET','POST'])
-@app.route('/FAQ/', methods = ['GET'])
-@app.route('/About/', methods = ['GET'])
-@app.route('/Tags/', methods = ['GET'])
+#@app.route('/addReview/', methods= ['GET','POST'])
+#@app.route('/FAQ/', methods = ['GET'])
+#@app.route('/About/', methods = ['GET'])
+#@app.route('/Tags/', methods = ['GET'])
 
-app.secret_key = 'moreLikeNancyEqualsLoser'
+app.secret_key = 'petEqualsLoser'
 
 if __name__ == '__main__':
   app.debug == True
