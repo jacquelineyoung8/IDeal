@@ -19,7 +19,7 @@ def welcomePage():
 @app.route('/About/', methods = ['GET'])
 @app.route('/Tags/', methods = ['GET'])
 
-app.secret_key = 'petEqualsLoser'
+app.secret_key = 'moreLikeNancyEqualsLoser'
 
 if __name__ == '__main__':
   app.debug == True
