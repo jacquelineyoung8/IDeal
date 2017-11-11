@@ -13,7 +13,9 @@ def getConn():
 @app.route('/welcome/', methods = ['GET'])
 def welcomePage():
   return app.send_static_file("index.html")
-
+@app.route('/welcome/src/x-app.html', methods = ['GET'])
+def appPage():
+  return app.send_static_file("src/x-app.html")
 #@app.route('/addReview/', methods= ['GET','POST'])
 #@app.route('/FAQ/', methods = ['GET'])
 #@app.route('/About/', methods = ['GET'])
