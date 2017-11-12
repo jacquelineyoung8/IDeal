@@ -4,12 +4,14 @@ drop table if exists tags;
 drop table if exists reviews;
 drop table if exists keywords;
 drop table if exists companies;
+
 create table reviews (
        r_id int primary key,
        text varchar(500),
        pos_sentiment boolean,
        job_title varchar(500)
 );
+ENGINE = InnoDB;
 
 -- insert into reviews values
 --        (1, 'this racist company is very bad', false, 'senior engineer'),
@@ -17,8 +19,10 @@ create table reviews (
 
 
 create table keywords (
-t_label varchar(50) primary key
+	t_label varchar(50) primary key
 );
+ENGINE = InnoDB;
+
 -- insert into keywords values
 --        ('sexism'),
 --        ('terrible'),
@@ -28,8 +32,8 @@ t_label varchar(50) primary key
 create table tags (
        r_id int,
        t_label varchar(50),
-       foreign key (r_id) references reviews on delete cascade,
-       foreign key (t_label) references keywords on delete cascade, 
+       foreign key (r_id) references reviews(r_id) on delete restrict,
+       foreign key (t_label) references keywords(t_label) on delete restrict, 
 );
 ENGINE = InnoDB;
 -- insert into tags(r_id, t_label) values
@@ -39,8 +43,10 @@ ENGINE = InnoDB;
 
 
 create table companies (
-c_name varchar(50) primary key,
+	c_name varchar(50) primary key,
 );
+ENGINE = InnoDB;
+
 -- insert into keywords(c_name) values
 --        ('Target'),
 --        ('Google'),
@@ -48,10 +54,10 @@ c_name varchar(50) primary key,
 
 
 create table experiences (
-       r_id int,
-c_name varchar(50),
-foreign key (r_id) references reviews on delete cascade,
-foreign key (c_name) references companies on delete cascade
+    r_id int,
+	c_name varchar(50),
+	foreign key (r_id) references reviews(r_id) on delete restrict,
+	foreign key (c_name) references companies(c_name) on delete restrict
 );
 ENGINE = InnoDB;
 -- insert into tags(r_id, c_name) values
