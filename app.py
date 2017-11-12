@@ -36,9 +36,12 @@ def tags():
   if request.method == 'GET':
     return render_template('index.html')
 
-@app.route('/welcome/static/jumbotron.css')
+@app.route('/static/style.css')
 def send_static():
-    return url_for('static', filename='jumbotron.css')
+    return url_for('static', filename='style.css')
+@app.route('/static/bootstrap.min.css')
+def send_boot():
+    return url_for('static', filename='bootstrap.min.css')
 
 
 app.secret_key = 'petEqualsLoser'
