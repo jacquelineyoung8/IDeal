@@ -10,7 +10,7 @@ create table reviews (
        text varchar(500),
        pos_sentiment boolean,
        job_title varchar(500)
-);
+)
 
 ENGINE = InnoDB;
 
@@ -21,7 +21,7 @@ ENGINE = InnoDB;
 
 create table keywords (
 	t_label varchar(50) primary key
-);
+)
 
 ENGINE = InnoDB;
 
@@ -35,8 +35,8 @@ create table tags (
        r_id int,
        t_label varchar(50),
        foreign key (r_id) references reviews(r_id) on delete restrict,
-       foreign key (t_label) references keywords(t_label) on delete restrict, 
-);
+       foreign key (t_label) references keywords(t_label) on delete restrict
+)
 
 ENGINE = InnoDB;
 -- insert into tags(r_id, t_label) values
@@ -46,8 +46,8 @@ ENGINE = InnoDB;
 
 
 create table companies (
-	c_name varchar(50) primary key,
-);
+	c_name varchar(50) primary key
+)
 
 ENGINE = InnoDB;
 
@@ -62,7 +62,7 @@ create table experiences (
 	c_name varchar(50),
 	foreign key (r_id) references reviews(r_id) on delete restrict,
 	foreign key (c_name) references companies(c_name) on delete restrict
-);
+)
 
 ENGINE = InnoDB;
 -- insert into tags(r_id, c_name) values
