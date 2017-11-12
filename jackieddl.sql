@@ -39,7 +39,7 @@ create table tags (
 )
 
 ENGINE = InnoDB;
-insert into tags(r_id, t_label) values
+insert into tags values
        (1, 'sexism'),
        (1, 'terrible'),
        (2, 'sad');
@@ -51,7 +51,7 @@ create table companies (
 
 ENGINE = InnoDB;
 
-insert into keywords(c_name) values
+insert into companies values
        ('Target'),
        ('Google'),
        ('Home Depot');
@@ -65,7 +65,7 @@ create table experiences (
 )
 
 ENGINE = InnoDB;
-insert into tags(r_id, c_name) values
+insert into tags values
        (1, 'Target'),
        (5, 'Target'),
        (6, 'Google');
