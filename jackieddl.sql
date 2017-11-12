@@ -14,9 +14,9 @@ create table reviews (
 
 ENGINE = InnoDB;
 
--- insert into reviews values
---        (1, 'this racist company is very bad', false, 'senior engineer'),
---        (2, 'they are mean', false, 'product engineer');
+insert into reviews values
+       (1, 'this racist company is very bad', false, 'senior engineer'),
+       (2, 'they are mean', false, 'product engineer');
 
 
 create table keywords (
