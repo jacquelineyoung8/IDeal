@@ -14,9 +14,9 @@ create table reviews (
 
 ENGINE = InnoDB;
 
--- insert into reviews values
---        (1, 'this racist company is very bad', false, 'senior engineer'),
---        (2, 'they are mean', false, 'product engineer');
+insert into reviews values
+       (1, 'this racist company is very bad', false, 'senior engineer'),
+       (2, 'they are mean', false, 'product engineer');
 
 
 create table keywords (
@@ -25,10 +25,10 @@ create table keywords (
 
 ENGINE = InnoDB;
 
--- insert into keywords values
---        ('sexism'),
---        ('terrible'),
---        ('sad');
+insert into keywords values
+       ('sexism'),
+       ('terrible'),
+       ('sad');
 
 
 create table tags (
@@ -39,10 +39,10 @@ create table tags (
 )
 
 ENGINE = InnoDB;
--- insert into tags(r_id, t_label) values
---        (1, 'sexism'),
---        (1, 'terrible'),
---        (2, 'sad');
+insert into tags(r_id, t_label) values
+       (1, 'sexism'),
+       (1, 'terrible'),
+       (2, 'sad');
 
 
 create table companies (
@@ -51,10 +51,10 @@ create table companies (
 
 ENGINE = InnoDB;
 
--- insert into keywords(c_name) values
---        ('Target'),
---        ('Google'),
---        ('Home Depot');
+insert into keywords(c_name) values
+       ('Target'),
+       ('Google'),
+       ('Home Depot');
 
 
 create table experiences (
@@ -65,10 +65,10 @@ create table experiences (
 )
 
 ENGINE = InnoDB;
--- insert into tags(r_id, c_name) values
---        (1, 'Target'),
---        (5, 'Target'),
---        (6, 'Google');
+insert into tags(r_id, c_name) values
+       (1, 'Target'),
+       (5, 'Target'),
+       (6, 'Google');
 
 
 
