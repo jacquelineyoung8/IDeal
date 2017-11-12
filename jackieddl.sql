@@ -25,10 +25,10 @@ create table keywords (
 
 ENGINE = InnoDB;
 
--- insert into keywords values
---        ('sexism'),
---        ('terrible'),
---        ('sad');
+insert into keywords values
+       ('sexism'),
+       ('terrible'),
+       ('sad');
 
 
 create table tags (
