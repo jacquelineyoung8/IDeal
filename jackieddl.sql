@@ -52,10 +52,10 @@ create table companies (
 
 ENGINE = InnoDB;
 
--- insert into companies values
---        ('Target'),
---        ('Google'),
---        ('Home Depot');
+insert into companies values
+       ('Target'),
+       ('Google'),
+       ('Home Depot');
 
 
 create table experiences (
