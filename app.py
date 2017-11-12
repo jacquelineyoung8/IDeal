@@ -10,25 +10,26 @@ def getConn():
   DSN['db'] = 'bramanud_db' #LOSER
   return dbconn2.connect(DSN)
 
-@app.route('/welcome/', methods = ['GET'])
+@app.route('/', methods = ['GET'])
+@app.route('/index.html', methods = ['GET'])
 def welcome():
   if request.method == 'GET':
     return render_template('index.html')
 
-@app.route('/addReview/', methods= ['GET','POST'])
+@app.route('/submit.html', methods= ['GET','POST'])
 def addReview():
   if request.method == 'GET':
-    return render_template('index.html')
+    return render_template('submit.html')
 
 @app.route('/FAQ/', methods = ['GET'])
 def faq():
   if request.method == 'GET':
     return render_template('index.html')
 
-@app.route('/About/', methods = ['GET'])
+@app.route('/about.html', methods = ['GET'])
 def about():
   if request.method == 'GET':
-    return render_template('index.html')
+    return render_template('about.html')
 
 @app.route('/Tags/', methods = ['GET'])
 def tags():
