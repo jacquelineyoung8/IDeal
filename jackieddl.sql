@@ -40,10 +40,10 @@ create table tags (
 
 ENGINE = InnoDB;
 
--- insert into tags values
---        (1, 'sexism'),
---        (1, 'terrible'),
---        (2, 'sad');
+insert into tags values
+       (1, 'sexism'),
+       (1, 'terrible'),
+       (2, 'sad');
 
 
 create table companies (
