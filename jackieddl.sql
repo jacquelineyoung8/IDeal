@@ -67,10 +67,10 @@ create table experiences (
 
 ENGINE = InnoDB;
 
--- insert into tags values
---        (1, 'Target'),
---        (5, 'Target'),
---        (6, 'Google');
+insert into experiences values
+       (1, 'Target'),
+       (5, 'Target'),
+       (6, 'Google');
 
 
 
