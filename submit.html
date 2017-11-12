@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IDeal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">IDeal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="submit.html">Submit
+              <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About
+            </a>
+
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">Share Your Story</h1>
+
+          <form id="form" class="topBefore" method="POST" action="{{script}}">
+    
+              <input id="name" type="text" placeholder="Company name">
+              <input id="email" type="text" placeholder="Role at company">
+              <div class='space'></div>
+
+              <input id="gender" type="text" placeholder="Gender Identity">
+              <input id="ethnicity" type="text" placeholder="Ethnicity">
+              <input id="sex-orientation" type="text" placeholder="Sexual Orientation">
+              <input id="class" type="text" placeholder="Socioeconomic Class">
+              <input id="disability" type="text" placeholder="Disabilities">
+              <div class='space'></div>
+
+              <textarea id="message" name="review" type="text" placeholder="Review"></textarea>
+          <input id="submit-button" type="submit" value="Submit">
+          
+        </form>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
