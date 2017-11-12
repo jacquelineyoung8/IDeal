@@ -14,21 +14,33 @@ def getConn():
 def welcome():
   if request.method == 'GET':
     return render_template('index.html')
-# @app.route('/css/', methods = ['GET'])
-# def appPage():
-#   return app.send_static_file("src/x-app.html")
-#@app.route('/addReview/', methods= ['GET','POST'])
-#@app.route('/FAQ/', methods = ['GET'])
-#@app.route('/About/', methods = ['GET'])
-#@app.route('/Tags/', methods = ['GET'])
 
+@app.route('/addReview/', methods= ['GET','POST'])
+def addReview():
+  if request.method == 'GET':
+    return render_template('index.html')
+
+@app.route('/FAQ/', methods = ['GET'])
+def faq():
+  if request.method == 'GET':
+    return render_template('index.html')
+
+@app.route('/About/', methods = ['GET'])
+def about():
+  if request.method == 'GET':
+    return render_template('index.html')
+
+@app.route('/Tags/', methods = ['GET'])
+def tags():
+  if request.method == 'GET':
+    return render_template('index.html')
 
 @app.route('/welcome/static/jumbotron.css')
 def send_static():
     return url_for('static', filename='jumbotron.css')
 
 
-app.secret_key = 'nancyEqualsLoser'
+app.secret_key = 'petEqualsLoser'
 
 if __name__ == '__main__':
   app.debug == True
