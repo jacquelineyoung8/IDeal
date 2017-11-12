@@ -7,7 +7,7 @@ drop table if exists companies;
 
 create table reviews (
        r_id int primary key,
-       text varchar(500),
+       post varchar(500),
        pos_sentiment boolean,
        job_title varchar(500)
 )
@@ -67,10 +67,10 @@ create table experiences (
 
 ENGINE = InnoDB;
 
--- insert into experiences values
---        (1, 'Target'),
---        (5, 'Target'),
---        (6, 'Google');
+insert into experiences values
+       (1, 'Target'),
+       (5, 'Target'),
+       (6, 'Google');
 
 
 
